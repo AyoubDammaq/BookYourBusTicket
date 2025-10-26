@@ -1,1 +1,40 @@
-<p>header works!</p>
+<div class="container-fluid header-container">
+  <img
+    src="assets/bus-booking-logo.png"
+    alt="Book Your Bus Ticket Logo"
+    class="logo"
+    width="70"
+    height="40"
+    role="img"
+    aria-label="Bootstrap"
+    routerLink="/home"
+  />
+
+  <ul class="nav custom-nav">
+    <li>
+      <a routerLink="/home" routerLinkActive="active" class="nav-link">Home</a>
+    </li>
+    <li>
+      <a routerLink="/bus-list" routerLinkActive="active" class="nav-link"
+        >Buses</a
+      >
+    </li>
+    <li>
+      <a routerLink="/station-list" routerLinkActive="active" class="nav-link"
+        >Stations</a
+      >
+    </li>
+    <li>
+      <a routerLink="/about" routerLinkActive="active" class="nav-link"
+        >About</a
+      >
+    </li>
+  </ul>
+
+  <div class="auth-buttons">
+    <button type="button" class="btn btn-light text-success fw-bold">Login</button>
+    <button type="button" class="btn btn-light text-success fw-bold">
+      Sign-up
+    </button>
+  </div>
+</div>
