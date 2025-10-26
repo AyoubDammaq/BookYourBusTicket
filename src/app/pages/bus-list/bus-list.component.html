@@ -1,1 +1,56 @@
-<p>bus-list works!</p>
+<div>
+  <app-header></app-header>
+</div>
+<div class="bus-list-container">
+  <h1>Book Your Bus Ticket</h1>
+
+  <div class="search-box">
+    <div class="input-group">
+      <img
+        src="assets/take-bus-icon.png"
+        alt="Take Bus Icon"
+        class="bus-icon"
+      />
+      <label>From</label>
+      <input type="text" placeholder="From" class="search-input" />
+    </div>
+
+    <div class="input-group">
+      <img
+        src="assets/leave-bus-icon.png"
+        alt="Leave Bus Icon"
+        class="bus-icon"
+      />
+      <label>To</label>
+      <input type="text" placeholder="To" class="search-input" />
+    </div>
+
+    <div class="input-group">
+      <img
+        src="assets/calendar-icon.png"
+        alt="Calendar Icon"
+        class="bus-icon"
+      />
+      <label>Date</label>
+      <input type="date" class="search-input" />
+    </div>
+
+    <button class="search-button">Search Buses</button>
+  </div>
+
+  <h2>Available Buses</h2>
+  <div *ngFor="let bus of buses" class="bus-card">
+    <div class="bus-card-content">
+      <div>{{ bus.matricule }}</div>
+      <div>{{ bus.departure }}{{ bus.departureDate | date:'medium' }}</div>
+      <div>{{ bus.duration }}</div>
+      <div>{{ bus.arrival }}{{ bus.arrivalDate | date:'medium' }}</div>
+      <div>{{ bus.station }}</div>
+      <div>Available seats {{ bus.seats }}</div>
+      <button class="book-button">
+        {{ bus.price }} <br />
+        Book Now
+      </button>
+    </div>
+  </div>
+</div>

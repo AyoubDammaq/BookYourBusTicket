@@ -8,6 +8,9 @@ import { BusListComponent } from './pages/bus-list/bus-list.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AddBusComponent } from './pages/add-bus/add-bus.component';
+import { HeaderComponent } from './pages/header/header.component';
+import { FooterComponent } from './pages/footer/footer.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { AddBusComponent } from './pages/add-bus/add-bus.component';
     BusListComponent,
     LoginComponent,
     RegisterComponent,
-    AddBusComponent
+    AddBusComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

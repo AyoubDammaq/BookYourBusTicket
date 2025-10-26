@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "matricule": "TN-1245",
+    "departure": "Tunis",
+    "arrival": "Sousse",
+    "departureDate": "2025-10-27T08:00:00",
+    "arrivalDate": "2025-10-27T10:30:00",
+    "duration": "2h 30m",
+    "station": "Bab Saadoun",
+    "seats": 12,
+    "price": "25 TND"
+  },
+  {
+    "id": 2,
+    "matricule": "TN-5874",
+    "departure": "Sfax",
+    "arrival": "Tunis",
+    "departureDate": "2025-10-27T06:30:00",
+    "arrivalDate": "2025-10-27T10:30:00",
+    "duration": "4h",
+    "station": "Sfax Gare Routière",
+    "seats": 8,
+    "price": "35 TND"
+  },
+  {
+    "id": 3,
+    "matricule": "TN-9320",
+    "departure": "Monastir",
+    "arrival": "Nabeul",
+    "departureDate": "2025-10-28T09:15:00",
+    "arrivalDate": "2025-10-28T12:25:00",
+    "duration": "3h 10m",
+    "station": "Monastir Centre",
+    "seats": 20,
+    "price": "30 TND"
+  },
+  {
+    "id": 4,
+    "matricule": "TN-2231",
+    "departure": "Sousse",
+    "arrival": "Gabès",
+    "departureDate": "2025-10-28T07:00:00",
+    "arrivalDate": "2025-10-28T12:15:00",
+    "duration": "5h 15m",
+    "station": "Sousse Est",
+    "seats": 6,
+    "price": "40 TND"
+  },
+  {
+    "id": 5,
+    "matricule": "TN-8099",
+    "departure": "Tunis",
+    "arrival": "Bizerte",
+    "departureDate": "2025-10-29T10:00:00",
+    "arrivalDate": "2025-10-29T11:45:00",
+    "duration": "1h 45m",
+    "station": "Bab Aliwa",
+    "seats": 15,
+    "price": "20 TND"
+  }
+]
