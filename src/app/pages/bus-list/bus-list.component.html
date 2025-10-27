@@ -38,13 +38,15 @@
     <button class="search-button">Search Buses</button>
   </div>
 
+  <button class="add-bus-button" routerLink="/add-bus">Add New Bus</button>
+
   <h2>Available Buses</h2>
   <div *ngFor="let bus of buses" class="bus-card">
     <div class="bus-card-content">
       <div>{{ bus.matricule }}</div>
-      <div>{{ bus.departure }}{{ bus.departureDate | date:'medium' }}</div>
+      <div>{{ bus.departure }} {{ bus.departureDate | date:'medium' }}</div>
       <div>{{ bus.duration }}</div>
-      <div>{{ bus.arrival }}{{ bus.arrivalDate | date:'medium' }}</div>
+      <div>{{ bus.arrival }} {{ bus.arrivalDate | date:'medium' }}</div>
       <div>{{ bus.station }}</div>
       <div>Available seats {{ bus.seats }}</div>
       <button class="book-button">

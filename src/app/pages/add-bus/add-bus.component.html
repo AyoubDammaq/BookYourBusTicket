@@ -1,1 +1,59 @@
-<p>add-bus works!</p>
+<h2 mat-dialog-title>Add New Bus</h2>
+
+<form (ngSubmit)="onSubmit()" #busForm="ngForm" class="dialog-form">
+  <mat-dialog-content>
+    <div class="form-grid">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Matricule</mat-label>
+        <input matInput type="text" [(ngModel)]="matricule" name="matricule" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Departure</mat-label>
+        <input matInput type="text" [(ngModel)]="departure" name="departure" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Departure Date</mat-label>
+        <input matInput type="datetime-local" [(ngModel)]="departureDate" name="departureDate" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Duration</mat-label>
+        <input matInput type="text" [(ngModel)]="duration" name="duration" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Arrival</mat-label>
+        <input matInput type="text" [(ngModel)]="arrival" name="arrival" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Arrival Date</mat-label>
+        <input matInput type="datetime-local" [(ngModel)]="arrivalDate" name="arrivalDate" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Station</mat-label>
+        <input matInput type="text" [(ngModel)]="station" name="station" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Available Seats</mat-label>
+        <input matInput type="number" [(ngModel)]="seats" name="seats" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input matInput type="number" [(ngModel)]="price" name="price" required>
+      </mat-form-field>
+
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" [disabled]="!busForm.form.valid">Add Bus</button>
+  </mat-dialog-actions>
+</form>
